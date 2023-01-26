@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<div class="topnav">
+  <a class="active" href="/javascript/coursework/index.html">Home</a>
+  <a href="/javascript/coursework/Games.html">Games</a>
+  <a href="/javascript/coursework/login.html">Login</a>
+</div>
+
+<div style="padding-left:16px">
+ 
+  
+</div>
+
+</body>
+<body style="background-color:burlywood;">
+<head>
+<link rel ="stylesheet" href="style.css">
+<h1> WELCOME TO DAN'S WEBSITE</h1>
+<center>
+<p>
+Dont really know what to put here
+</p>
+
+</center>
+<section>
+  <center>
+  <img class="mySlides" src="yes.jpg" style="width:50%">
+  <img class="mySlides" src="yes.jpg" style="width:50%">
+  <img class="mySlides" src="yes.jpg" style="width:50%">
+  </center>
+</section>
+<script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script> 
+    
+    
+</body>
+</html>
